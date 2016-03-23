@@ -20,6 +20,28 @@
 
 int objects;
 
+int root(int id[],int i)
+{
+	int i
+	while(i != id[i])
+		i=id[i];
+	return i;
+}
+
+int quick_union(int id[],int p,int q)
+{
+	int i=root(p);
+	int j=root(q);
+	id[i]=q;
+}
+
+int quick_connected(int p,int q)
+{
+	return root(p)==root(q);
+}
+
+
+
 /*
  * This function do the union between two given elements
  */
